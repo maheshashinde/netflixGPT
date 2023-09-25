@@ -3,6 +3,7 @@ import MovieList from "./MovieList";
 
 const SecondaryContainer = ()=>{
 
+    //This is to get from store and populate
     const movies= useSelector(store=>store?.movies);
     return (
         movies.nowPlayingMovies && (

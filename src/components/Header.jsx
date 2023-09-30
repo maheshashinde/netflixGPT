@@ -48,12 +48,12 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute  w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
+    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
       <img className="w-44" src={LOGO} alt="logo" />
       {user && (
-        <div className="flex p-2">
+        <div className="flex justify-between p-2">
           <button
-            className="bg-red-500 text-black w-28 h-12 rounded-lg mr-2 cursor-pointer hover:bg-opacity-80"
+            className="bg-red-500 text-black w-28 h-12 rounded-lg mr-2 cursor-pointer hover:bg-opacity-80 md:block hidden"
             onClick={toggleGPTHome}
           >
             {showGpt ? "Home" : "GPT Search"}
